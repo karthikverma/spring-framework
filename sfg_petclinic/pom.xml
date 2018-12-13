@@ -16,7 +16,7 @@
     <groupId>spring.petclinic</groupId>
     <artifactId>sfg_petclinic</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>sfg_petclinic</name>
+    <name>sfg-pet-clinic</name>
     <description>pet clinic application</description>
 
     <properties>
@@ -34,11 +34,21 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <!--<configuration>
+                <configuration>
                     <skip>true</skip>
-                </configuration>-->
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <configuration>
+                    <goals>install</goals>
+                </configuration>
             </plugin>
         </plugins>
     </build>
+    <scm>
+        <developerConnection>scm:git:https://github.com/karthikverma/spring-framework.git</developerConnection>
+    </scm>
 
 </project>
