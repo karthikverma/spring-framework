@@ -1,4 +1,6 @@
 package spring.mvc.recipeapp.domain;
 
-public class Difficulty {
+public enum Difficulty {
+
+    EASY, MODERATE, KIND_OF_HARD, HARD
 }

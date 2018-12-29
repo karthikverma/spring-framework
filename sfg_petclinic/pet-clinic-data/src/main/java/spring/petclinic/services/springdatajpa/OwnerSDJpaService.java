@@ -9,6 +9,7 @@ import spring.petclinic.repositories.PetTypeRepository;
 import spring.petclinic.services.OwnerService;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -28,6 +29,11 @@ public class OwnerSDJpaService  implements OwnerService {
     @Override
     public Owner findByLastname(String lastName) {
         return ownerRepository.findByLastName(lastName);
+    }
+
+    @Override
+    public List<Owner> findByLastNameLike(String lastName) {
+        return ownerRepository.findByLastNameLike(lastName);
     }
 
     @Override
